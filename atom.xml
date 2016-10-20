@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>brucewar</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://brucewar.me/"/>
+  <updated>2016-10-19T06:45:47.542Z</updated>
+  <id>http://brucewar.me/</id>
+  
+  <author>
+    <name>brucewar</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>答利器上的六个问题</title>
+    <link href="http://brucewar.me/2016/09/29/%E7%AD%94%E5%88%A9%E5%99%A8%E4%B8%8A%E7%9A%84%E5%85%AD%E4%B8%AA%E9%97%AE%E9%A2%98/"/>
+    <id>http://brucewar.me/2016/09/29/答利器上的六个问题/</id>
+    <published>2016-09-29T08:18:27.000Z</published>
+    <updated>2016-10-19T06:45:47.542Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/IMG_1186.JPG" alt="brucewar"></p>
+<h3 id="介绍一下你自己和所做的工作"><a href="#介绍一下你自己和所做的工作" class="headerlink" title="介绍一下你自己和所做的工作"></a>介绍一下你自己和所做的工作</h3><p>我叫王金龙，是一名初级（按照工作年限来说的话）Web前端开发，但是以开发经历来说，我至少应该算一名合格的前端攻城狮。目前在途牛旅游网工作（已经寻找到新的追求）。读书的时候，接触的东西比较少，心里所想唯有学习，所以也就没培养任何一样兴趣，偶尔会和同学一起踢踢球；工作的时候，才逐渐培养了一些兴趣爱好，如跳舞、唱歌等，跳舞是今年才培养起来的一个兴趣，但是因为工作的关系，基本没什么时间练舞，所以跳的非常非常一般。15年研究生毕业后，工作也有一年半了，而且公司是业务驱动开发，所以代码也写了不少，可是自身能力的提升却没看出来。</p>
+<h3 id="你都在使用哪些硬件"><a href="#你都在使用哪些硬件" class="headerlink" title="你都在使用哪些硬件"></a>你都在使用哪些硬件</h3><p><img src="http://7pumxs.com1.z0.glb.clouddn.com/keycool.jpg" alt="keycool红轴"></p>
+<p>这款机械键盘是工作没多久之后买的。话说，当时看到同组的一位老程序员（简称斌哥，后来他们组从我们部门分出去啦）用的机械键盘，黑色键帽配上彩虹键帽，觉得很好看，所以一时冲动想买一把机械键盘。</p>
+<blockquote>
+<p>做什么事都要过一下脑子</p>
+</blockquote>
+<p>上面这句话，印象很深刻，因为我对机械键盘的知识一片空白，所以必须通过各方面的了解，首先从百度百科词条<a href="http://baike.baidu.com/link?url=sKWDdw44eHxUdTb40AbNYLSzOgKJx7xB-FN4uucHCr_FvNreuWYWlgjwDCULDpM4hje9YDkS_8jZwazXiRJl3O-nJ1AaP_pZDoFOw_X4uBOVoSoHaFHOI5pV2SWOq7hn" target="_blank" rel="external">机械键盘</a>学习了基本的知识，然后去问答网站（知乎）关注了话题<em>机械键盘</em>，发现此话题下，有很多问题是“程序员男朋友生日，想送机械键盘，有推荐的吗？”。额！！！被各种虐，心想为啥没有妹子送我。不过，还是有很多人推荐了不错的机械键盘。个人感觉很喜欢<strong>Filco圣手二代</strong>，但是迫于经济能力有限，最终还是买了一把国产的红轴，用起来真的很舒服（PS：好多同事试玩后都觉得不错）。</p>
+<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/akg.jpg" alt="AKG K450"></p>
+<blockquote>
+<p>舞蹈配上音乐之后，才有了灵魂</p>
+</blockquote>
+<p>如果一个舞者在没有背景乐的环境下舞动自己的身体，非专业观者可能会觉得看不懂，专业的人也只能从专业技巧上加以评价。有了音乐后，舞者会随着音乐的轻重缓急表达自己的情绪，这才有了舞魂。<br>程序员写代码时的手指就如同这舞者，在键盘这个舞台上表演，配合音乐的节奏，程序便有了它的灵魂（PS：我写程序时听的歌单<a href="http://music.163.com/#/m/playlist?id=159311553&amp;userid=85782250" target="_blank" rel="external">dance</a>）。AKG的这个经典款的耳机是<strong>昊哥</strong>推荐的，性价比非常高（非广告）。</p>
+<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/samsung.jpg" alt="三星S24D360HL"></p>
+<p>显示器没什么可以说的，做为Web前端开发，两个显示器是必备的，一个放IDE，一个放浏览器，对于开发效率有非常大的提升。</p>
+<h3 id="软件呢"><a href="#软件呢" class="headerlink" title="软件呢"></a>软件呢</h3><p>作为Linux的拥护者，必须向大家推荐Vim编辑器，我觉得它能让你脱离不必要的鼠标操作，大大提高工作效率，很惭愧，Vim新手阶段，用的不是很熟，只了解一些简单的编辑命令。顺带安利一款Chrome插件<a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a>（用Vim命令操作浏览器环境）。</p>
+<h3 id="你最理想的工作环境是什么"><a href="#你最理想的工作环境是什么" class="headerlink" title="你最理想的工作环境是什么"></a>你最理想的工作环境是什么</h3><p>大桌子（圆弧型），两台显示器，一台笔记本，网络一定要好（自带翻墙，Youtube 1080P不卡顿），绿植围绕，周围坐着谦虚耐心的牛人，大家一起干着一件有意义（改变世界，哈哈，这个太大）的事。</p>
+<h3 id="你平时获得工作灵感的方式有哪些"><a href="#你平时获得工作灵感的方式有哪些" class="headerlink" title="你平时获得工作灵感的方式有哪些"></a>你平时获得工作灵感的方式有哪些</h3><p>逛各种网站，知乎，简书等；玩各种流行的APP，微信，Instagram等，任何一个好的产品，自有它的独特的一面，我觉得作为前端开发，也需要有一些设计的想法，我开发过的项目中都曾借鉴过这些应用。</p>
+<h3 id="推荐一件生活中的利器给大家"><a href="#推荐一件生活中的利器给大家" class="headerlink" title="推荐一件生活中的利器给大家"></a>推荐一件生活中的利器给大家</h3><p>VPN，强烈推荐我用的这款，但是这里不方便贴链接，有需要的私信我。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://7pumxs.com1.z0.glb.clouddn.com/IMG_1186.JPG&quot; alt=&quot;brucewar&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;介绍一下你自己和所做的工作&quot;&gt;&lt;a href=&quot;#介绍一下你自己和所做的工作&quot; class=&quot;
+    
+    </summary>
+    
+    
+      <category term="利器" scheme="http://brucewar.me/tags/%E5%88%A9%E5%99%A8/"/>
+    
+  </entry>
+  
+</feed>
