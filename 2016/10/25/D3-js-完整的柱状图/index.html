@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Blog, brucewar" />
+  <meta name="keywords" content="D3,柱状图," />
 
 
 
@@ -92,15 +92,24 @@
 
 
 
-<meta name="description" content="一位忠实的技术追求者！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="brucewar">
-<meta property="og:url" content="http://brucewar.me/archives/2016/index.html">
+<meta name="description" content="首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。
+
+添加SVG画布12345678910111213141516// 画布大小var width = 400,height = 400;// 画布四个方向上的留白var margin = &amp;#123;	top: 20,	right: 30,	bottom: 20,	left: 30&amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="D3.js（完整的柱状图）">
+<meta property="og:url" content="http://brucewar.me/2016/10/25/D3-js-完整的柱状图/index.html">
 <meta property="og:site_name" content="brucewar">
-<meta property="og:description" content="一位忠实的技术追求者！">
+<meta property="og:description" content="首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。
+
+添加SVG画布12345678910111213141516// 画布大小var width = 400,height = 400;// 画布四个方向上的留白var margin = &amp;#123;	top: 20,	right: 30,	bottom: 20,	left: 30&amp;#125;">
+<meta property="og:image" content="http://brucewar.qiniudn.com/chart.png">
+<meta property="og:updated_time" content="2016-10-25T03:23:00.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="brucewar">
-<meta name="twitter:description" content="一位忠实的技术追求者！">
+<meta name="twitter:title" content="D3.js（完整的柱状图）">
+<meta name="twitter:description" content="首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。
+
+添加SVG画布12345678910111213141516// 画布大小var width = 400,height = 400;// 画布四个方向上的留白var margin = &amp;#123;	top: 20,	right: 30,	bottom: 20,	left: 30&amp;#125;">
+<meta name="twitter:image" content="http://brucewar.qiniudn.com/chart.png">
 
 
 
@@ -118,7 +127,7 @@
   };
 </script>
 
-  <title> Archive | brucewar </title>
+  <title> D3.js（完整的柱状图） | brucewar </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -149,7 +158,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right  page-archive  ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,147 +279,204 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 3 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/25/D3-js-完整的柱状图/" itemprop="url">
-              
-                <span itemprop="name">D3.js（完整的柱状图）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-25T10:59:26+08:00"
-              content="2016-10-25" >
-          10-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/24/D3.js-入门篇/" itemprop="url">
-              
-                <span itemprop="name">D3.js（入门篇）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-24T16:26:58+08:00"
-              content="2016-10-24" >
-          10-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/29/答利器上的六个问题/" itemprop="url">
-              
-                <span itemprop="name">答利器上的六个问题</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-29T16:18:27+08:00"
-              content="2016-09-29" >
-          09-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                D3.js（完整的柱状图）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-10-25T10:59:26+08:00" content="2016-10-25">
+              2016-10-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/D3-js/" itemprop="url" rel="index">
+                    <span itemprop="name">D3.js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/25/D3-js-完整的柱状图/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/D3-js-完整的柱状图/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/25/D3-js-完整的柱状图/" class="leancloud_visitors" data-flag-title="D3.js（完整的柱状图）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。</p>
+<p><img src="http://brucewar.qiniudn.com/chart.png" alt="柱状图"></p>
+<h3 id="添加SVG画布"><a href="#添加SVG画布" class="headerlink" title="添加SVG画布"></a>添加SVG画布</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 画布大小</span></div><div class="line"><span class="keyword">var</span> width = <span class="number">400</span>,</div><div class="line">height = <span class="number">400</span>;</div><div class="line"></div><div class="line"><span class="comment">// 画布四个方向上的留白</span></div><div class="line"><span class="keyword">var</span> margin = &#123;</div><div class="line">	<span class="attr">top</span>: <span class="number">20</span>,</div><div class="line">	<span class="attr">right</span>: <span class="number">30</span>,</div><div class="line">	<span class="attr">bottom</span>: <span class="number">20</span>,</div><div class="line">	<span class="attr">left</span>: <span class="number">30</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> chart = d3.select(<span class="string">'.chart'</span>)</div><div class="line">.attr(<span class="string">'width'</span>, width)</div><div class="line">.attr(<span class="string">'height'</span>, height)</div><div class="line">.append(<span class="string">'g'</span>);</div></pre></td></tr></table></figure>
+<h3 id="定义比例尺"><a href="#定义比例尺" class="headerlink" title="定义比例尺"></a>定义比例尺</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// define x,y point rule</span></div><div class="line"><span class="keyword">var</span> x = d3.scale.ordinal()</div><div class="line">.rangeRoundBands([<span class="number">0</span>, width - margin.left - margin.right]);</div><div class="line"><span class="keyword">var</span> y = d3.scale.linear()</div><div class="line">.range([height - margin.top - margin.bottom, <span class="number">0</span>]);</div></pre></td></tr></table></figure>
+<h3 id="添加矩形及文字"><a href="#添加矩形及文字" class="headerlink" title="添加矩形及文字"></a>添加矩形及文字</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 矩形之间的空白</span></div><div class="line"><span class="keyword">var</span> barPadding = <span class="number">4</span>;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line">* 这里用到了d3异步读取数据的接口csv</div><div class="line">* chart.csv的文件内容如下：</div><div class="line">* name,value</div><div class="line">* Locke,4</div><div class="line">* Reyes,8</div><div class="line">* Ford,15</div><div class="line">* Jarrah,16</div><div class="line">* Shephard,23</div><div class="line">* Kwon,42</div><div class="line">*/</div><div class="line">d3.csv(<span class="string">'data/chart.csv'</span>, type, <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>)</span>&#123;</div><div class="line">	x.domain(data.map(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> d.name; &#125;));</div><div class="line">	y.domain([<span class="number">0</span>, d3.max(data, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> d.value;</div><div class="line">	&#125;)]);</div><div class="line"></div><div class="line">	<span class="comment">// append rect</span></div><div class="line">	chart.selectAll(<span class="string">'.bar'</span>)</div><div class="line">	.data(data)</div><div class="line">	.enter().append(<span class="string">'rect'</span>)</div><div class="line">	.attr(<span class="string">'class'</span>, <span class="string">'bar'</span>)</div><div class="line">	.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">	.attr(<span class="string">'x'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> x(d.name) + barPadding / <span class="number">2</span>; &#125;)</div><div class="line">	.attr(<span class="string">'y'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> y(d.value); &#125;)</div><div class="line">	.attr(<span class="string">'height'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> height - margin.top - margin.bottom - y(d.value); &#125;)</div><div class="line">	.attr(<span class="string">'width'</span>, x.rangeBand() - barPadding);</div><div class="line"></div><div class="line">	<span class="comment">// append text</span></div><div class="line">	chart.selectAll(<span class="string">'.text'</span>)</div><div class="line">	.data(data)</div><div class="line">	.enter()</div><div class="line">	.append(<span class="string">'text'</span>)</div><div class="line">	.attr(<span class="string">'class'</span>, <span class="string">'text'</span>)</div><div class="line">	.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">	.attr(<span class="string">'x'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> x(d.name) + barPadding / <span class="number">2</span>;</div><div class="line">	&#125;).attr(<span class="string">'y'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> y(d.value);</div><div class="line">	&#125;).attr(<span class="string">'dx'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> (x.rangeBand() - barPadding) / <span class="number">2</span>;</div><div class="line">	&#125;).attr(<span class="string">'dy'</span>, <span class="number">20</span>)</div><div class="line">	.text(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> d.value;</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">type</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">	d.value = +d.value;</div><div class="line">	<span class="keyword">return</span> d;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="定义并添加坐标轴"><a href="#定义并添加坐标轴" class="headerlink" title="定义并添加坐标轴"></a>定义并添加坐标轴</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// define axis</span></div><div class="line"><span class="keyword">var</span> xAxis = d3.svg.axis()</div><div class="line">.scale(x)</div><div class="line">.orient(<span class="string">'bottom'</span>);</div><div class="line"><span class="keyword">var</span> yAxis = d3.svg.axis()</div><div class="line">.scale(y)</div><div class="line">.orient(<span class="string">'left'</span>)</div><div class="line">.ticks(<span class="number">10</span>);	<span class="comment">//显示的刻度值个数</span></div><div class="line"></div><div class="line"><span class="comment">// append x axis</span></div><div class="line">chart.append(<span class="string">'g'</span>)</div><div class="line">.attr(<span class="string">'class'</span>, <span class="string">'x axis'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">', '</span> + (height - margin.bottom) + <span class="string">')'</span>)</div><div class="line">.call(xAxis);</div><div class="line"></div><div class="line"><span class="comment">// append y axis</span></div><div class="line">chart.append(<span class="string">'g'</span>)</div><div class="line">.attr(<span class="string">'class'</span>, <span class="string">'y axis'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">.call(yAxis)</div><div class="line">.append(<span class="string">'text'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'rotate(-90)'</span>)</div><div class="line">.attr(<span class="string">'y'</span>, <span class="number">6</span>)</div><div class="line">.attr(<span class="string">'dy'</span>, <span class="string">'.71em'</span>)</div><div class="line">.style(<span class="string">'text-anchor'</span>, <span class="string">'end'</span>)</div><div class="line">.text(<span class="string">'value'</span>);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/D3/" rel="tag">#D3</a>
+          
+            <a href="/tags/柱状图/" rel="tag">#柱状图</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/24/D3.js-入门篇/" rel="next" title="D3.js（入门篇）">
+                <i class="fa fa-chevron-left"></i> D3.js（入门篇）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/25/D3-js-完整的柱状图/"
+           data-title="D3.js（完整的柱状图）" data-url="http://brucewar.me/2016/10/25/D3-js-完整的柱状图/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -430,8 +496,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default.png"
@@ -571,6 +646,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SVG画布"><span class="nav-number">1.</span> <span class="nav-text">添加SVG画布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义比例尺"><span class="nav-number">2.</span> <span class="nav-text">定义比例尺</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加矩形及文字"><span class="nav-number">3.</span> <span class="nav-text">添加矩形及文字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义并添加坐标轴"><span class="nav-number">4.</span> <span class="nav-text">定义并添加坐标轴</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -673,11 +759,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
