@@ -1,28 +1,376 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>brucewar</title>
+<!doctype html>
+
+
+
   
-  <link href="/atom.xml" rel="self"/>
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <link href="http://brucewar.me/"/>
-  <updated>2016-10-27T07:20:01.754Z</updated>
-  <id>http://brucewar.me/</id>
   
-  <author>
-    <name>brucewar</name>
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>D3.js（Draggable and Scalable Tree）</title>
-    <link href="http://brucewar.me/2016/10/27/D3.js-Draggable%20and%20Scalable%20Tree/"/>
-    <id>http://brucewar.me/2016/10/27/D3.js-Draggable and Scalable Tree/</id>
-    <published>2016-10-27T05:32:26.000Z</published>
-    <updated>2016-10-27T07:20:01.754Z</updated>
     
-    <content type="html"><![CDATA[<p>因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。</p>
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Gloria Hallelujah:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="D3,树状图," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="brucewar" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。
+布局（Layout）原本我以为理解了基本的选择器、元素操作、Enter、Exit就能去看实例的代码了，后来发现我错了，所以这里需要理解一下D3中布局（Layout）的概念。布局是D3中一个十分重要的概念，从布局衍生出很多图表。例如：饼状图（pie）、力导向图（force），树状图（tree）等等，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="D3.js（Draggable and Scalable Tree）">
+<meta property="og:url" content="http://brucewar.me/2016/10/27/D3.js-Draggable and Scalable Tree/index.html">
+<meta property="og:site_name" content="brucewar">
+<meta property="og:description" content="因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。
+布局（Layout）原本我以为理解了基本的选择器、元素操作、Enter、Exit就能去看实例的代码了，后来发现我错了，所以这里需要理解一下D3中布局（Layout）的概念。布局是D3中一个十分重要的概念，从布局衍生出很多图表。例如：饼状图（pie）、力导向图（force），树状图（tree）等等，">
+<meta property="og:updated_time" content="2016-10-27T07:20:01.754Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="D3.js（Draggable and Scalable Tree）">
+<meta name="twitter:description" content="因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。
+布局（Layout）原本我以为理解了基本的选择器、元素操作、Enter、Exit就能去看实例的代码了，后来发现我错了，所以这里需要理解一下D3中布局（Layout）的概念。布局是D3中一个十分重要的概念，从布局衍生出很多图表。例如：饼状图（pie）、力导向图（force），树状图（tree）等等，">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6335656177459791000,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> D3.js（Draggable and Scalable Tree） | brucewar </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?7fabfd44062c2222a2c44c552ea79602";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">brucewar</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                D3.js（Draggable and Scalable Tree）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-10-27T13:32:26+08:00" content="2016-10-27">
+              2016-10-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/D3-js/" itemprop="url" rel="index">
+                    <span itemprop="name">D3.js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/27/D3.js-Draggable and Scalable Tree/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/27/D3.js-Draggable and Scalable Tree/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/27/D3.js-Draggable and Scalable Tree/" class="leancloud_visitors" data-flag-title="D3.js（Draggable and Scalable Tree）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。</p>
 <h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><p>原本我以为理解了基本的选择器、元素操作、Enter、Exit就能去看实例的代码了，后来发现我错了，所以这里需要理解一下D3中布局（Layout）的概念。布局是D3中一个十分重要的概念，从布局衍生出很多图表。例如：饼状图（pie）、力导向图（force），树状图（tree）等等，基本实现了很多开源的可视化工具提供的图表。但是它又和很多可视化工具（如Echarts）有很大的不同。</p>
 <p>相对于其它工具来说，D3较底层一点，所以初学者可能会觉得有点困难，但是一旦理解了D3布局的思想，使用起来，会比其它工具更加得心应手。首先，我阐释下D3和大部分可视化工具数据到图表的流程：</p>
 <ul>
@@ -43,147 +391,662 @@
 <blockquote>
 <p>可以从<a href="https://github.com/brucewar/practice-in-D3" target="_blank" rel="external">https://github.com/brucewar/practice-in-D3</a>获取示例代码</p>
 </blockquote>
-]]></content>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/D3/" rel="tag">#D3</a>
+          
+            <a href="/tags/树状图/" rel="tag">#树状图</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/25/D3.js-完整的柱状图/" rel="next" title="D3.js（完整的柱状图）">
+                <i class="fa fa-chevron-left"></i> D3.js（完整的柱状图）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
     
-    <summary type="html">
+      <div class="ds-thread" data-thread-key="2016/10/27/D3.js-Draggable and Scalable Tree/"
+           data-title="D3.js（Draggable and Scalable Tree）" data-url="http://brucewar.me/2016/10/27/D3.js-Draggable and Scalable Tree/">
+      </div>
     
-      &lt;p&gt;因为最近手上有个小的需求，设计一个可缩放和可拖拽的树形结构，我便去研读了D3官网给的一个树形的例子。&lt;/p&gt;
-&lt;h3 id=&quot;布局（Layout）&quot;&gt;&lt;a href=&quot;#布局（Layout）&quot; class=&quot;headerlink&quot; title=&quot;布局（Layout）&quot;&gt;&lt;/
-    
-    </summary>
-    
-      <category term="D3.js" scheme="http://brucewar.me/categories/D3-js/"/>
-    
-    
-      <category term="D3" scheme="http://brucewar.me/tags/D3/"/>
-    
-      <category term="树状图" scheme="http://brucewar.me/tags/%E6%A0%91%E7%8A%B6%E5%9B%BE/"/>
-    
-  </entry>
+  </div>
+
+
+        </div>
+        
+          
   
-  <entry>
-    <title>D3.js（完整的柱状图）</title>
-    <link href="http://brucewar.me/2016/10/25/D3.js-%E5%AE%8C%E6%95%B4%E7%9A%84%E6%9F%B1%E7%8A%B6%E5%9B%BE/"/>
-    <id>http://brucewar.me/2016/10/25/D3.js-完整的柱状图/</id>
-    <published>2016-10-25T02:59:26.000Z</published>
-    <updated>2016-10-27T06:18:29.403Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。</p>
-<p><img src="http://brucewar.qiniudn.com/chart.png" alt="柱状图"></p>
-<h3 id="添加SVG画布"><a href="#添加SVG画布" class="headerlink" title="添加SVG画布"></a>添加SVG画布</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 画布大小</span></div><div class="line"><span class="keyword">var</span> width = <span class="number">400</span>,</div><div class="line">height = <span class="number">400</span>;</div><div class="line"></div><div class="line"><span class="comment">// 画布四个方向上的留白</span></div><div class="line"><span class="keyword">var</span> margin = &#123;</div><div class="line">	<span class="attr">top</span>: <span class="number">20</span>,</div><div class="line">	<span class="attr">right</span>: <span class="number">30</span>,</div><div class="line">	<span class="attr">bottom</span>: <span class="number">20</span>,</div><div class="line">	<span class="attr">left</span>: <span class="number">30</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> chart = d3.select(<span class="string">'.chart'</span>)</div><div class="line">.attr(<span class="string">'width'</span>, width)</div><div class="line">.attr(<span class="string">'height'</span>, height)</div><div class="line">.append(<span class="string">'g'</span>);</div></pre></td></tr></table></figure>
-<h3 id="定义比例尺"><a href="#定义比例尺" class="headerlink" title="定义比例尺"></a>定义比例尺</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// define x,y point rule</span></div><div class="line"><span class="keyword">var</span> x = d3.scale.ordinal()</div><div class="line">.rangeRoundBands([<span class="number">0</span>, width - margin.left - margin.right]);</div><div class="line"><span class="keyword">var</span> y = d3.scale.linear()</div><div class="line">.range([height - margin.top - margin.bottom, <span class="number">0</span>]);</div></pre></td></tr></table></figure>
-<h3 id="添加矩形及文字"><a href="#添加矩形及文字" class="headerlink" title="添加矩形及文字"></a>添加矩形及文字</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 矩形之间的空白</span></div><div class="line"><span class="keyword">var</span> barPadding = <span class="number">4</span>;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line">* 这里用到了d3异步读取数据的接口csv</div><div class="line">* chart.csv的文件内容如下：</div><div class="line">* name,value</div><div class="line">* Locke,4</div><div class="line">* Reyes,8</div><div class="line">* Ford,15</div><div class="line">* Jarrah,16</div><div class="line">* Shephard,23</div><div class="line">* Kwon,42</div><div class="line">*/</div><div class="line">d3.csv(<span class="string">'data/chart.csv'</span>, type, <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>)</span>&#123;</div><div class="line">	x.domain(data.map(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> d.name; &#125;));</div><div class="line">	y.domain([<span class="number">0</span>, d3.max(data, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> d.value;</div><div class="line">	&#125;)]);</div><div class="line"></div><div class="line">	<span class="comment">// append rect</span></div><div class="line">	chart.selectAll(<span class="string">'.bar'</span>)</div><div class="line">	.data(data)</div><div class="line">	.enter().append(<span class="string">'rect'</span>)</div><div class="line">	.attr(<span class="string">'class'</span>, <span class="string">'bar'</span>)</div><div class="line">	.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">	.attr(<span class="string">'x'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> x(d.name) + barPadding / <span class="number">2</span>; &#125;)</div><div class="line">	.attr(<span class="string">'y'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> y(d.value); &#125;)</div><div class="line">	.attr(<span class="string">'height'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123; <span class="keyword">return</span> height - margin.top - margin.bottom - y(d.value); &#125;)</div><div class="line">	.attr(<span class="string">'width'</span>, x.rangeBand() - barPadding);</div><div class="line"></div><div class="line">	<span class="comment">// append text</span></div><div class="line">	chart.selectAll(<span class="string">'.text'</span>)</div><div class="line">	.data(data)</div><div class="line">	.enter()</div><div class="line">	.append(<span class="string">'text'</span>)</div><div class="line">	.attr(<span class="string">'class'</span>, <span class="string">'text'</span>)</div><div class="line">	.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">	.attr(<span class="string">'x'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> x(d.name) + barPadding / <span class="number">2</span>;</div><div class="line">	&#125;).attr(<span class="string">'y'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> y(d.value);</div><div class="line">	&#125;).attr(<span class="string">'dx'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> (x.rangeBand() - barPadding) / <span class="number">2</span>;</div><div class="line">	&#125;).attr(<span class="string">'dy'</span>, <span class="number">20</span>)</div><div class="line">	.text(<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">		<span class="keyword">return</span> d.value;</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">type</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">	d.value = +d.value;</div><div class="line">	<span class="keyword">return</span> d;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="定义并添加坐标轴"><a href="#定义并添加坐标轴" class="headerlink" title="定义并添加坐标轴"></a>定义并添加坐标轴</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// define axis</span></div><div class="line"><span class="keyword">var</span> xAxis = d3.svg.axis()</div><div class="line">.scale(x)</div><div class="line">.orient(<span class="string">'bottom'</span>);</div><div class="line"><span class="keyword">var</span> yAxis = d3.svg.axis()</div><div class="line">.scale(y)</div><div class="line">.orient(<span class="string">'left'</span>)</div><div class="line">.ticks(<span class="number">10</span>);	<span class="comment">//显示的刻度值个数</span></div><div class="line"></div><div class="line"><span class="comment">// append x axis</span></div><div class="line">chart.append(<span class="string">'g'</span>)</div><div class="line">.attr(<span class="string">'class'</span>, <span class="string">'x axis'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">', '</span> + (height - margin.bottom) + <span class="string">')'</span>)</div><div class="line">.call(xAxis);</div><div class="line"></div><div class="line"><span class="comment">// append y axis</span></div><div class="line">chart.append(<span class="string">'g'</span>)</div><div class="line">.attr(<span class="string">'class'</span>, <span class="string">'y axis'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'translate('</span> + margin.left + <span class="string">','</span> + margin.top + <span class="string">')'</span>)</div><div class="line">.call(yAxis)</div><div class="line">.append(<span class="string">'text'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'rotate(-90)'</span>)</div><div class="line">.attr(<span class="string">'y'</span>, <span class="number">6</span>)</div><div class="line">.attr(<span class="string">'dy'</span>, <span class="string">'.71em'</span>)</div><div class="line">.style(<span class="string">'text-anchor'</span>, <span class="string">'end'</span>)</div><div class="line">.text(<span class="string">'value'</span>);</div></pre></td></tr></table></figure>
-<blockquote>
-<p>可以从<a href="https://github.com/brucewar/practice-in-D3" target="_blank" rel="external">https://github.com/brucewar/practice-in-D3</a>获取示例代码</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;首先，我们先看一下最终的柱状图效果展示。如下图所示，一个完整的柱状图需要包含三个部分：矩形、文字、坐标轴。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://brucewar.qiniudn.com/chart.png&quot; alt=&quot;柱状图&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;添加SV
-    
-    </summary>
-    
-      <category term="D3.js" scheme="http://brucewar.me/categories/D3-js/"/>
-    
-    
-      <category term="D3" scheme="http://brucewar.me/tags/D3/"/>
-    
-      <category term="柱状图" scheme="http://brucewar.me/tags/%E6%9F%B1%E7%8A%B6%E5%9B%BE/"/>
-    
-  </entry>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default.png"
+               alt="brucewar" />
+          <p class="site-author-name" itemprop="name">brucewar</p>
+          <p class="site-description motion-element" itemprop="description">一位忠实的技术追求者！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/brucewar" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://weibo.com/brucewar" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/brucewar" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/brucewar" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/brucewar89" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/brucewar89" target="_blank" title="FaceBook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  FaceBook
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://baohongfei.com" title="BaoHongfei" target="_blank">BaoHongfei</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://coderaladdin.com" title="ZhuShenshen" target="_blank">ZhuShenshen</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://fantasy.codes" title="Fantasy Shao" target="_blank">Fantasy Shao</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://deliazhi.github.io" title="Delia" target="_blank">Delia</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#布局（Layout）"><span class="nav-number">1.</span> <span class="nav-text">布局（Layout）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#树状图"><span class="nav-number">2.</span> <span class="nav-text">树状图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#画布"><span class="nav-number">2.1.</span> <span class="nav-text">画布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取异步数据"><span class="nav-number">2.2.</span> <span class="nav-text">获取异步数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造树"><span class="nav-number">2.3.</span> <span class="nav-text">构造树</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  <entry>
-    <title>D3.js（入门篇）</title>
-    <link href="http://brucewar.me/2016/10/24/D3.js-%E5%85%A5%E9%97%A8%E7%AF%87/"/>
-    <id>http://brucewar.me/2016/10/24/D3.js-入门篇/</id>
-    <published>2016-10-24T08:26:58.000Z</published>
-    <updated>2016-10-25T03:00:41.325Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>D3.js（后面简称D3，官方首页<a href="https://d3js.org/" target="_blank" rel="external">https://d3js.org/</a>）是基于JavaScript开发的一套用于数据可视化工具，项目开源在GitHub，项目排名靠前。它提供了很多API，如DOM（<code>Document Object Model</code>）的一些操作，绘制图形等。截止本文发表时间，D3已更新到v4，v4在v3的基础上，有了很大的改变（因为v3只支持通过svg和dom构图，所以v4在v3的基础上增加了对Canvas的支持以及API的修改）,本文使用的版本为v3的API。</p>
-<h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>D3.js Hello World<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://d3js.org/d3.v3.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>first text<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>second text<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>third text<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">		<span class="keyword">var</span> p = d3.select(<span class="string">'body'</span>).selectAll(<span class="string">'p'</span>)</div><div class="line">		.attr(<span class="string">'color'</span>, <span class="string">'red'</span>)</div><div class="line">		.attr(<span class="string">'font-size'</span>, <span class="string">'72px'</span>)</div><div class="line">		.text(<span class="string">'brucewar'</span>);</div><div class="line">		<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>上面代码展示了基本的DOM操作，有过jQuery开发经历的人会发现其语法和jQuery很相似，主要是以下两点：</p>
-<ul>
-<li>支持元素选择器</li>
-<li>链式语法结构</li>
-</ul>
-<h5 id="插入元素"><a href="#插入元素" class="headerlink" title="插入元素"></a>插入元素</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 末尾插入p元素</span></div><div class="line">d3.select(<span class="string">'body'</span>).append(<span class="string">'p'</span>).text(<span class="string">'append new prograph'</span>);</div><div class="line"><span class="comment">// 在第一个p元素之前插入p</span></div><div class="line">d3.select(<span class="string">'p'</span>).insert(<span class="string">'p'</span>).text(<span class="string">'insert new prograph'</span>);</div></pre></td></tr></table></figure>
-<h5 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">d3.select(<span class="string">'p'</span>).remove();</div></pre></td></tr></table></figure>
-<h4 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h4><p>在D3中，选择器通常和数据绑定一起使用，这里的<strong>数据绑定</strong>的意思是将DOM元素与数据进行绑定，当需要依靠数据操作元素会非常方便。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>];</div><div class="line">p.data(arr).text(<span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>)</span>&#123;</div><div class="line">	<span class="comment">// d: 数据 i: 元素索引</span></div><div class="line">	<span class="keyword">return</span> d;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h4 id="绘制简单的横向柱状图"><a href="#绘制简单的横向柱状图" class="headerlink" title="绘制简单的横向柱状图"></a>绘制简单的横向柱状图</h4><ol>
-<li><p>添加svg画布</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> width = <span class="number">300</span>;</div><div class="line"><span class="keyword">var</span> height = <span class="number">300</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> svg = d3.select(<span class="string">'body'</span>)</div><div class="line">.append(<span class="string">'svg'</span>)</div><div class="line">.attr(<span class="string">'width'</span>. width)</div><div class="line">.attr(<span class="string">'height'</span>, height);</div></pre></td></tr></table></figure>
-</li>
-<li><p>绘制矩形</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> data = [<span class="number">250</span>, <span class="number">210</span>, <span class="number">170</span>, <span class="number">130</span>, <span class="number">90</span>]; <span class="comment">// 表示矩形的宽度</span></div><div class="line"><span class="keyword">var</span> rectHeight = <span class="number">25</span>;</div><div class="line"></div><div class="line">svg.selectAll(<span class="string">'rect'</span>)</div><div class="line">.data(data)</div><div class="line">.enter()	<span class="comment">// 当元素个数不足数据个数时，自动补全</span></div><div class="line">.append(<span class="string">'rect'</span>)</div><div class="line">.attr(<span class="string">'x'</span>, <span class="number">20</span>)</div><div class="line">.attr(<span class="string">'y'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d, i</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> i * rectHeight;</div><div class="line">&#125;)</div><div class="line">.attr(<span class="string">'width'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> d;</div><div class="line">&#125;)</div><div class="line">.attr(<span class="string">'height'</span>, rectHeight - <span class="number">2</span>)</div><div class="line">.attr(<span class="string">'fill'</span>, <span class="string">'steelblue'</span>);</div></pre></td></tr></table></figure>
-<p> 从上面的代码可以看出当<code>data</code>中的数据大于画布的宽度时，绘制的矩形会超出画布，所以需要引入<em>比例尺</em>（Scale）的概念。比例尺的概念类似数学中的一元二次函数，有x和y两个未知数，当x的值确定时，y的值也就确定了，x范围被称为定义域，y的范围为值域，对应于D3比例尺中的domain和range。D3为我们提供了很多比例尺，这里主要讲这里柱状图所要使用的线性比例尺。</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> min = d3.min(data);</div><div class="line"><span class="keyword">var</span> max = d3.max(data);</div><div class="line"></div><div class="line"><span class="keyword">var</span> linear = d3.scale.linear()</div><div class="line">.domain([min, max])</div><div class="line">.range([<span class="number">0</span>, <span class="number">300</span>]);</div></pre></td></tr></table></figure>
-</li>
-<li><p>绘制坐标轴</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//数据</span></div><div class="line"><span class="keyword">var</span> dataset = [ <span class="number">2.5</span> , <span class="number">2.1</span> , <span class="number">1.7</span> , <span class="number">1.3</span> , <span class="number">0.9</span> ];</div><div class="line"><span class="comment">//定义比例尺</span></div><div class="line"><span class="keyword">var</span> linear = d3.scale.linear()</div><div class="line"> .domain([<span class="number">0</span>, d3.max(dataset)])</div><div class="line"> .range([<span class="number">0</span>, <span class="number">250</span>]);</div><div class="line"></div><div class="line"><span class="keyword">var</span> axisX = d3.svg.axis()</div><div class="line"> .scale(linear)      <span class="comment">//指定比例尺</span></div><div class="line"> .orient(<span class="string">"bottom"</span>)   <span class="comment">//指定刻度的方向</span></div><div class="line"> .ticks(<span class="number">7</span>);          <span class="comment">//指定刻度的数量</span></div></pre></td></tr></table></figure>
-<p> 定义了坐标轴之后，只要在svg中添加一个分组元素，再将坐标轴的其他元素添加到分组即可。</p>
- <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">svg.append(<span class="string">'g'</span>)</div><div class="line">.attr(<span class="string">'class'</span>, <span class="string">'axis'</span>)</div><div class="line">.attr(<span class="string">'transform'</span>, <span class="string">'translate(20, 130)'</span>)</div><div class="line">.call(axisX);</div></pre></td></tr></table></figure>
- <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/** 修改坐标轴样式 */</span></div><div class="line"><span class="selector-class">.axis</span> <span class="selector-tag">path</span>,</div><div class="line"><span class="selector-class">.axis</span> <span class="selector-tag">line</span>&#123;</div><div class="line">	<span class="attribute">fill</span>: none;</div><div class="line">	<span class="attribute">stroke</span>: black;</div><div class="line">	<span class="attribute">shape-rendering</span>: crispEdges;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.axis</span> <span class="selector-tag">text</span>&#123;</div><div class="line">	<span class="attribute">font-family</span>: sans-serif;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">11px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;D3.js（后面简称D3，官方首页&lt;a href=&quot;https://d3js.org/&quot; target=&quot;_blank&quot; rel=&quot;exte
-    
-    </summary>
-    
-      <category term="D3.js" scheme="http://brucewar.me/categories/D3-js/"/>
-    
-    
-      <category term="D3" scheme="http://brucewar.me/tags/D3/"/>
-    
-      <category term="JavaScript" scheme="http://brucewar.me/tags/JavaScript/"/>
-    
-  </entry>
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">brucewar</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
   
-  <entry>
-    <title>答利器上的六个问题</title>
-    <link href="http://brucewar.me/2016/09/29/%E7%AD%94%E5%88%A9%E5%99%A8%E4%B8%8A%E7%9A%84%E5%85%AD%E4%B8%AA%E9%97%AE%E9%A2%98/"/>
-    <id>http://brucewar.me/2016/09/29/答利器上的六个问题/</id>
-    <published>2016-09-29T08:18:27.000Z</published>
-    <updated>2016-10-19T06:45:47.542Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/IMG_1186.JPG" alt="brucewar"></p>
-<h3 id="介绍一下你自己和所做的工作"><a href="#介绍一下你自己和所做的工作" class="headerlink" title="介绍一下你自己和所做的工作"></a>介绍一下你自己和所做的工作</h3><p>我叫王金龙，是一名初级（按照工作年限来说的话）Web前端开发，但是以开发经历来说，我至少应该算一名合格的前端攻城狮。目前在途牛旅游网工作（已经寻找到新的追求）。读书的时候，接触的东西比较少，心里所想唯有学习，所以也就没培养任何一样兴趣，偶尔会和同学一起踢踢球；工作的时候，才逐渐培养了一些兴趣爱好，如跳舞、唱歌等，跳舞是今年才培养起来的一个兴趣，但是因为工作的关系，基本没什么时间练舞，所以跳的非常非常一般。15年研究生毕业后，工作也有一年半了，而且公司是业务驱动开发，所以代码也写了不少，可是自身能力的提升却没看出来。</p>
-<h3 id="你都在使用哪些硬件"><a href="#你都在使用哪些硬件" class="headerlink" title="你都在使用哪些硬件"></a>你都在使用哪些硬件</h3><p><img src="http://7pumxs.com1.z0.glb.clouddn.com/keycool.jpg" alt="keycool红轴"></p>
-<p>这款机械键盘是工作没多久之后买的。话说，当时看到同组的一位老程序员（简称斌哥，后来他们组从我们部门分出去啦）用的机械键盘，黑色键帽配上彩虹键帽，觉得很好看，所以一时冲动想买一把机械键盘。</p>
-<blockquote>
-<p>做什么事都要过一下脑子</p>
-</blockquote>
-<p>上面这句话，印象很深刻，因为我对机械键盘的知识一片空白，所以必须通过各方面的了解，首先从百度百科词条<a href="http://baike.baidu.com/link?url=sKWDdw44eHxUdTb40AbNYLSzOgKJx7xB-FN4uucHCr_FvNreuWYWlgjwDCULDpM4hje9YDkS_8jZwazXiRJl3O-nJ1AaP_pZDoFOw_X4uBOVoSoHaFHOI5pV2SWOq7hn" target="_blank" rel="external">机械键盘</a>学习了基本的知识，然后去问答网站（知乎）关注了话题<em>机械键盘</em>，发现此话题下，有很多问题是“程序员男朋友生日，想送机械键盘，有推荐的吗？”。额！！！被各种虐，心想为啥没有妹子送我。不过，还是有很多人推荐了不错的机械键盘。个人感觉很喜欢<strong>Filco圣手二代</strong>，但是迫于经济能力有限，最终还是买了一把国产的红轴，用起来真的很舒服（PS：好多同事试玩后都觉得不错）。</p>
-<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/akg.jpg" alt="AKG K450"></p>
-<blockquote>
-<p>舞蹈配上音乐之后，才有了灵魂</p>
-</blockquote>
-<p>如果一个舞者在没有背景乐的环境下舞动自己的身体，非专业观者可能会觉得看不懂，专业的人也只能从专业技巧上加以评价。有了音乐后，舞者会随着音乐的轻重缓急表达自己的情绪，这才有了舞魂。<br>程序员写代码时的手指就如同这舞者，在键盘这个舞台上表演，配合音乐的节奏，程序便有了它的灵魂（PS：我写程序时听的歌单<a href="http://music.163.com/#/m/playlist?id=159311553&amp;userid=85782250" target="_blank" rel="external">dance</a>）。AKG的这个经典款的耳机是<strong>昊哥</strong>推荐的，性价比非常高（非广告）。</p>
-<p><img src="http://7pumxs.com1.z0.glb.clouddn.com/samsung.jpg" alt="三星S24D360HL"></p>
-<p>显示器没什么可以说的，做为Web前端开发，两个显示器是必备的，一个放IDE，一个放浏览器，对于开发效率有非常大的提升。</p>
-<h3 id="软件呢"><a href="#软件呢" class="headerlink" title="软件呢"></a>软件呢</h3><p>作为Linux的拥护者，必须向大家推荐Vim编辑器，我觉得它能让你脱离不必要的鼠标操作，大大提高工作效率，很惭愧，Vim新手阶段，用的不是很熟，只了解一些简单的编辑命令。顺带安利一款Chrome插件<a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a>（用Vim命令操作浏览器环境）。</p>
-<h3 id="你最理想的工作环境是什么"><a href="#你最理想的工作环境是什么" class="headerlink" title="你最理想的工作环境是什么"></a>你最理想的工作环境是什么</h3><p>大桌子（圆弧型），两台显示器，一台笔记本，网络一定要好（自带翻墙，Youtube 1080P不卡顿），绿植围绕，周围坐着谦虚耐心的牛人，大家一起干着一件有意义（改变世界，哈哈，这个太大）的事。</p>
-<h3 id="你平时获得工作灵感的方式有哪些"><a href="#你平时获得工作灵感的方式有哪些" class="headerlink" title="你平时获得工作灵感的方式有哪些"></a>你平时获得工作灵感的方式有哪些</h3><p>逛各种网站，知乎，简书等；玩各种流行的APP，微信，Instagram等，任何一个好的产品，自有它的独特的一面，我觉得作为前端开发，也需要有一些设计的想法，我开发过的项目中都曾借鉴过这些应用。</p>
-<h3 id="推荐一件生活中的利器给大家"><a href="#推荐一件生活中的利器给大家" class="headerlink" title="推荐一件生活中的利器给大家"></a>推荐一件生活中的利器给大家</h3><p>VPN，强烈推荐我用的这款，但是这里不方便贴链接，有需要的私信我。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://7pumxs.com1.z0.glb.clouddn.com/IMG_1186.JPG&quot; alt=&quot;brucewar&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;介绍一下你自己和所做的工作&quot;&gt;&lt;a href=&quot;#介绍一下你自己和所做的工作&quot; class=&quot;
-    
-    </summary>
-    
-    
-      <category term="利器" scheme="http://brucewar.me/tags/%E5%88%A9%E5%99%A8/"/>
-    
-  </entry>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
   
-</feed>
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"brucewar"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("K2APrikH8M8a1zJdEHQKVo4X-gzGzoHsz", "cfjx5kil98d81B0qtNBIM9s0");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
