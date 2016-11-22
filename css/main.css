@@ -1664,7 +1664,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f2b9d0;
+  background: #fb28ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2634,4 +2634,41 @@ body {
   .post-body {
     text-align: justify;
   }
+}
+#musicPanel {
+  position: relative;
+  z-index: 10000;
+}
+#musicPanel #musicControl {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 40px;
+  right: 24px;
+  z-index: 1050;
+  padding: 0 6px;
+  width: 25px;
+  background: #222;
+  font-size: 12px;
+  opacity: 0.6;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #222;
+  -webkit-transition: 1sec;
+  transition: 1sec;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+#musicPanel #musicControl.on+.music-content {
+  display: block;
+}
+#musicPanel .music-content {
+  display: none;
+  position: fixed;
+  bottom: 65px;
+  right: 0;
 }
