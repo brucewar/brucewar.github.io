@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://brucewar.me/"/>
-  <updated>2016-12-06T02:06:40.860Z</updated>
+  <updated>2016-12-20T15:43:10.447Z</updated>
   <id>http://brucewar.me/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm3.0新的依赖解决方案</title>
+    <link href="http://brucewar.me/2016/12/20/npm3-0%E6%96%B0%E7%9A%84%E4%BE%9D%E8%B5%96%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://brucewar.me/2016/12/20/npm3-0新的依赖解决方案/</id>
+    <published>2016-12-20T15:02:20.000Z</published>
+    <updated>2016-12-20T15:43:10.447Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x6700;&#x8FD1;&#x7ED9;&#x6211;&#x7684;&#x88C5;&#x5907;&#xFF08;<em>Thinkpad S3-s431</em>&#xFF09;&#x5347;&#x4E86;&#x4E00;&#x4E0B;&#x7EA7;&#xFF0C;&#x5C06;&#x539F;&#x672C;&#x7528;&#x6765;&#x52A0;&#x901F;&#x7F13;&#x5B58;&#x7684;<code>24G</code>&#x56FA;&#x6001;&#x786C;&#x76D8;&#x6362;&#x6210;&#x4E86;<code>128G</code>&#x3002;&#x6240;&#x4EE5;&#x5F97;&#x91CD;&#x88C5;&#x7CFB;&#x7EDF;&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x5806;&#x8F6F;&#x4EF6;&#x4E5F;&#x5F97;&#x91CD;&#x88C5;&#x3002;&#x5305;&#x62EC;Node.js&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x4E86;&#x6700;&#x65B0;&#x7684;Node.js&#xFF08;v6.9.2&#xFF09;,npm&#xFF08;v3.10.9&#xFF09;&#x3002;&#x7531;&#x4E8E;<code>node_modules</code>&#x91CC;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x7ED3;&#x6784;&#x592A;&#x6DF1;&#xFF0C;&#x65E0;&#x6CD5;&#x79FB;&#x52A8;&#xFF0C;&#x53EA;&#x80FD;&#x53BB;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;<code>npm install</code>&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x73B0;<code>node_modules</code>&#x6587;&#x4EF6;&#x5939;&#x7ED3;&#x6784;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<p><img src="/2016/12/20/npm3-0&#x65B0;&#x7684;&#x4F9D;&#x8D56;&#x89E3;&#x51B3;&#x65B9;&#x6848;/npmv3.png" alt="npm v3"></p>
+<p>&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x88AB;&#x5206;&#x5728;&#x4E86;&#x4E0D;&#x540C;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;&#x6EE1;&#x8DB3;&#x4E0B;&#x597D;&#x5947;&#x5FC3;&#xFF0C;&#x53BB;&#x770B;&#x4E86;<a href="https://docs.npmjs.com/how-npm-works/npm3#npm-v3-dependency-resolution" target="_blank" rel="external">npm&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+<p>&#x679C;&#x7136;NPM&#x5F00;&#x53D1;&#x56E2;&#x961F;&#x8FD8;&#x662F;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x5305;&#x5197;&#x4F59;&#x548C;&#x5305;&#x7ED3;&#x6784;&#x592A;&#x6DF1;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x4ED6;&#x4EEC;&#x662F;&#x5982;&#x4F55;&#x505A;&#x7684;&#x3002;</p>
+<p>npm2&#x4EE5;&#x4E00;&#x79CD;&#x5D4C;&#x5957;&#x7684;&#x65B9;&#x5F0F;&#x5B89;&#x88C5;&#x6240;&#x6709;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x800C;npm3&#x5C06;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#x90FD;&#x5B89;&#x88C5;&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x7684;<code>node_modules</code>&#x4E0B;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="/2016/12/20/npm3-0&#x65B0;&#x7684;&#x4F9D;&#x8D56;&#x89E3;&#x51B3;&#x65B9;&#x6848;/npm3deps2.png" alt="npm2&#x548C;npm3&#x6BD4;&#x8F83;"></p>
+<p>APP&#x4F9D;&#x8D56;&#x6A21;&#x5757;A&#xFF0C;&#x800C;&#x6A21;&#x5757;A&#x53C8;&#x4F9D;&#x8D56;&#x6A21;&#x5757;B&#xFF0C;npm2&#x7684;&#x65B9;&#x6848;&#x662F;&#x5C06;&#x6A21;&#x5757;B&#x5B89;&#x88C5;&#x5728;&#x6A21;&#x5757;A&#x7684;<code>node_modules</code>&#x3002;npm3&#x5C06;&#x6A21;&#x5757;A&#x548C;&#x6A21;&#x5757;B&#x90FD;&#x5B89;&#x88C5;&#x5728;APP&#x7684;<code>node_modules</code>&#x4E2D;&#x3002;&#x5047;&#x5982;APP&#x4F9D;&#x8D56;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;C&#xFF0C;&#x800C;&#x6A21;&#x5757;C&#x53C8;&#x4F9D;&#x8D56;&#x53E6;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x6A21;&#x5757;B&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5B83;&#x4EEC;&#x53C8;&#x6709;&#x54EA;&#x4E9B;&#x533A;&#x522B;&#xFF1A;</p>
+<p><img src="/2016/12/20/npm3-0&#x65B0;&#x7684;&#x4F9D;&#x8D56;&#x89E3;&#x51B3;&#x65B9;&#x6848;/npm3deps4.png" alt="npm2&#x548C;npm3&#x4E0D;&#x540C;&#x7248;&#x672C;&#x6A21;&#x5757;&#x7BA1;&#x7406;&#x6BD4;&#x8F83;"></p>
+<p>npm2&#x4E2D;&#xFF0C;&#x4F1A;&#x5728;&#x6A21;&#x5757;A&#x548C;C&#x7684;<code>node_modules</code>&#x4E0B;&#x5B89;&#x88C5;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x6A21;&#x5757;B&#xFF0C;&#x800C;npm3&#x5148;&#x5B89;&#x88C5;&#x6A21;&#x5757;A&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;B&#x7684;1.0&#x7248;&#x672C;&#x5B89;&#x88C5;&#x5728;APP&#x6A21;&#x5757;&#x4E0B;&#xFF0C;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x6A21;&#x5757;&#x51B2;&#x7A81;&#xFF0C;&#x540C;npm2&#x7684;&#x505A;&#x6CD5;&#x7C7B;&#x4F3C;&#xFF0C;&#x5C06;&#x6A21;&#x5757;C&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;B2.0&#x5B89;&#x88C5;&#x5728;&#x6A21;&#x5757;C&#x4E0B;&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>npm ls</code>&#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x56FE;&#x3002;&#x5982;&#x679C;&#x60F3;&#x770B;&#x9879;&#x76EE;&#x4E3B;&#x76EE;&#x5F55;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm ls --depth=0</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x6700;&amp;#x8FD1;&amp;#x7ED9;&amp;#x6211;&amp;#x7684;&amp;#x88C5;&amp;#x5907;&amp;#xFF08;&lt;em&gt;Thinkpad S3-s431&lt;/em&gt;&amp;#xFF09;&amp;#x5347;&amp;#x4E86;&amp;#x4E00;&amp;#x4E0B;&amp;#x7EA7;
+    
+    </summary>
+    
+      <category term="npm" scheme="http://brucewar.me/categories/npm/"/>
+    
+    
+      <category term="npm" scheme="http://brucewar.me/tags/npm/"/>
+    
+      <category term="v3" scheme="http://brucewar.me/tags/v3/"/>
+    
+  </entry>
   
   <entry>
     <title>GitBook平台发布教程</title>
