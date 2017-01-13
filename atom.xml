@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://brucewar.me/"/>
-  <updated>2016-12-25T01:46:19.160Z</updated>
+  <updated>2017-01-13T02:07:26.860Z</updated>
   <id>http://brucewar.me/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title> windows下node版本管理:nvm-windows</title>
+    <link href="http://brucewar.me/2017/01/13/windows%E4%B8%8Bnode%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86-nvm-windows/"/>
+    <id>http://brucewar.me/2017/01/13/windows下node版本管理-nvm-windows/</id>
+    <published>2017-01-13T01:18:18.000Z</published>
+    <updated>2017-01-13T02:07:26.860Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x6700;&#x8FD1;&#x5DE5;&#x4F5C;&#x4E0A;&#x63A5;&#x624B;&#x4E86;&#x4E24;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x53EF;&#x5B83;&#x4EEC;&#x4F9D;&#x8D56;&#x7684;node&#x7248;&#x672C;&#x4E0D;&#x540C;&#xFF0C;&#x4E8E;&#x662F;&#x60F3;&#x5230;&#x4E86;&#x4E4B;&#x524D;&#x7528;&#x7684;<strong>nvm</strong>&#xFF08;Node Version Manager&#xFF09;&#x3002;</p>
+<blockquote>
+<p><a href="https://github.com/creationix/nvm" target="_blank" rel="external">https://github.com/creationix/nvm</a></p>
+</blockquote>
+<p>&#x4E4B;&#x524D;&#x5B89;&#x88C5;nvm&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x901A;&#x8FC7;<code>npm install nvm</code>&#xFF0C;&#x800C;&#x65B0;&#x7248;&#x672C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x6216;&#x8005;&#x624B;&#x52A8;&#x5B89;&#x88C5;&#x3002;&#x76EE;&#x524D;&#xFF0C;nvm&#x6CA1;&#x6709;&#x63D0;&#x4F9B;windows&#x7684;&#x652F;&#x6301;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5176;&#x6587;&#x6863;&#x4E2D;&#x63D0;&#x5230;&#x4E86;<strong>nvm-windows</strong>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x3002;</p>
+<blockquote>
+<p><a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows</a></p>
+</blockquote>
+<h3 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h3><p>&#x5728;&#x5B89;&#x88C5;nvm-windows&#x524D;&#xFF0C;&#x9700;&#x8981;&#x505A;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x5378;&#x8F7D;&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x6709;&#x7684;node.js</li>
+<li>&#x5220;&#x9664;node.js&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF08;&#x4F8B;&#x5982;<code>C:\Program Files\nodejs</code>&#xFF09;</li>
+<li>&#x5220;&#x9664;npm&#x5305;&#x7684;&#x76EE;&#x5F55;&#xFF08;&#x4F8B;&#x5982;<code>C:\Users&lt;user&gt;\AppData\Roaming\npm</code>&#xFF09;</li>
+</ol>
+<p><img src="/2017/01/13/windows&#x4E0B;node&#x7248;&#x672C;&#x7BA1;&#x7406;-nvm-windows/release,png" alt="&#x6253;&#x5F00;release&#x9875;&#x9762;"></p>
+<p>&#x6253;&#x5F00;release&#x9875;&#x9762;&#xFF0C;&#x4E0B;&#x8F7D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x5B89;&#x88C5;&#x5305;&#x3002;</p>
+<p><img src="/2017/01/13/windows&#x4E0B;node&#x7248;&#x672C;&#x7BA1;&#x7406;-nvm-windows/install.png" alt="&#x5B89;&#x88C5;"></p>
+<h3 id="&#x66F4;&#x65B0;"><a href="#&#x66F4;&#x65B0;" class="headerlink" title="&#x66F4;&#x65B0;"></a>&#x66F4;&#x65B0;</h3><p>&#x66F4;&#x65B0;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x76F4;&#x63A5;&#x4E0B;&#x8F7D;&#x6700;&#x65B0;&#x7248;&#x7684;nvm-windows&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;&#x5B83;&#x5C06;&#x5B89;&#x5168;&#x7684;&#x8986;&#x76D6;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><a href="#&#x4F7F;&#x7528;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"></a>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h3><ul>
+<li><code>nvm install &lt;version&gt; [arch]</code>&#xFF1A;version&#x53EF;&#x4EE5;&#x662F;&#x6307;&#x5B9A;&#x7684;node.js&#x7248;&#x672C;&#x6216;&#x8005;<code>latest</code>&#xFF08;&#x6700;&#x65B0;&#x7248;&#xFF09;&#xFF0C;arch&#x53EF;&#x4EE5;&#x662F;<code>32</code>&#x3001;<code>64</code>&#x6216;&#x8005;<code>all</code></li>
+<li><code>nvm list [available]</code>&#xFF1A;&#x5217;&#x51FA;&#x5F53;&#x524D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x7684;node.js&#x7248;&#x672C;&#xFF0C;<code>available</code>&#x53C2;&#x6570;&#x5217;&#x51FA;&#x53EF;&#x5B89;&#x88C5;&#x7248;&#x672C;</li>
+<li><code>nvm use &lt;version&gt; [arch]</code>&#xFF1A;&#x5207;&#x6362;node.js&#x7248;&#x672C;</li>
+</ul>
+<p>&#x8FD9;&#x91CC;&#x5C31;&#x4ECB;&#x7ECD;&#x51E0;&#x4E2A;&#x5E38;&#x7528;&#x547D;&#x4EE4;&#xFF0C;&#x66F4;&#x591A;&#x547D;&#x4EE4;&#x8BF7;&#x81EA;&#x884C;&#x770B;&#x6587;&#x6863;&#x3002;</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x6700;&amp;#x8FD1;&amp;#x5DE5;&amp;#x4F5C;&amp;#x4E0A;&amp;#x63A5;&amp;#x624B;&amp;#x4E86;&amp;#x4E24;&amp;#x4E2A;&amp;#x9879;&amp;#x76EE;&amp;#xFF0C;&amp;#x53EF;&amp;#x5B83;&amp;#x4EEC;&amp;#x4F9D;&amp;
+    
+    </summary>
+    
+      <category term="nvm" scheme="http://brucewar.me/categories/nvm/"/>
+    
+    
+      <category term="nvm" scheme="http://brucewar.me/tags/nvm/"/>
+    
+      <category term="node" scheme="http://brucewar.me/tags/node/"/>
+    
+      <category term="nvm-windows" scheme="http://brucewar.me/tags/nvm-windows/"/>
+    
+  </entry>
   
   <entry>
     <title>2016年终总结</title>
