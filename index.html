@@ -316,6 +316,158 @@
             
               
                 
+                <a class="post-title-link" href="/2017/05/04/CentOS-ftp服务搭建/" itemprop="url">
+                  CentOS ftp服务搭建
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-05-04T11:33:03+08:00" content="2017-05-04">
+              2017-05-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/04/CentOS-ftp服务搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/05/04/CentOS-ftp服务搭建/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/05/04/CentOS-ftp服务搭建/" class="leancloud_visitors" data-flag-title="CentOS ftp服务搭建">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+&#x597D;&#x8BB0;&#x6027;&#x4E0D;&#x5982;&#x70C2;&#x7B14;&#x5934;
+
+&#x6BCF;&#x6B21;&#x60F3;&#x8981;windows&#x548C;linux&#x4E92;&#x4F20;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x90FD;&#x5F97;&#x53BB;&#x641C;&#x7D22;&#x201C;Linux ftp&#x670D;&#x52A1;&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x201D;&#xFF0C;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#x592A;&#x591A;&#xFF0C;&#x8FD8;&#x662F;&#x628A;&#x5B83;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x5427;&#xFF01;&#xFF01;&#xFF01;
+
+&#x5B89;&#x88C5;vsftpd ftp
+1yum -y install ftp vsftpd
+
+&#x5907;&#x4EFD;vsftpd&#x539F;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+12cd /etc/vsftpd/cp vsftpd.conf vsftpd.conf.origin
+
+&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x660E;&#x6587;&#x6587;&#x4EF6;
+123vim /etc/vsftpd/vftpuser.txt# brucewar# password
+
+&#x6839;&#x636E;&#x660E;&#x6587;&#x521B;&#x5EFA;&#x5BC6;&#x7801;DB&#x6587;&#x4EF6;
+1db_load -T -t hash -f /etc/vsftpd/vftpuser.txt /etc/vsftpd/vftpuser.db
+
+&#x67E5;&#x770B;&#x5BC6;&#x7801;&#x6570;&#x636E;&#x6587;&#x4EF6;
+12file /etc/vsftpd/vftpus
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/05/04/CentOS-ftp服务搭建/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/03/30/细胞卫士/" itemprop="url">
                   细胞卫士
                 </a>
@@ -1540,140 +1692,6 @@ https://github.com/coreybutler/nvm-windows
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/24/D3.js-入门篇/" itemprop="url">
-                  D3.js（入门篇）
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-24T16:26:58+08:00" content="2016-10-24">
-              2016-10-24
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/D3-js/" itemprop="url" rel="index">
-                    <span itemprop="name">D3.js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/24/D3.js-入门篇/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/24/D3.js-入门篇/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/24/D3.js-入门篇/" class="leancloud_visitors" data-flag-title="D3.js（入门篇）">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          &#x7B80;&#x4ECB;D3.js&#xFF08;&#x540E;&#x9762;&#x7B80;&#x79F0;D3&#xFF0C;&#x5B98;&#x65B9;&#x9996;&#x9875;https://d3js.org/&#xFF09;&#x662F;&#x57FA;&#x4E8E;JavaScript&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x5957;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x9879;&#x76EE;&#x5F00;&#x6E90;&#x5728;GitHub&#xFF0C;&#x9879;&#x76EE;&#x6392;&#x540D;&#x9760;&#x524D;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;API&#xFF0C;&#x5982;DOM&#xFF08;Document Object Model&#xFF09;&#x7684;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x7B49;&#x3002;&#x622A;&#x6B62;&#x672C;&#x6587;&#x53D1;&#x8868;&#x65F6;&#x95F4;&#xFF0C;D3&#x5DF2;&#x66F4;&#x65B0;&#x5230;v4&#xFF0C;v4&#x5728;v3&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x6709;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x6539;&#x53D8;&#xFF08;&#x56E0;&#x4E3A;v3&#x53EA;&#x652F;&#x6301;&#x901A;&#x8FC7;svg&#x548C;dom&#x6784;&#x56FE;&#xFF0C;&#x6240;&#x4EE5;v4&#x5728;v3&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;&
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/24/D3.js-入门篇/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1719,7 +1737,7 @@ https://github.com/coreybutler/nvm-windows
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1727,7 +1745,7 @@ https://github.com/coreybutler/nvm-windows
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -1736,7 +1754,7 @@ https://github.com/coreybutler/nvm-windows
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

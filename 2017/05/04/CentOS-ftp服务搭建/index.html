@@ -76,7 +76,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="gitbook,电子书,教程," />
+  <meta name="keywords" content="Linux,CentOS,ftp," />
 
 
 
@@ -94,21 +94,22 @@
 
 
 
-<meta name="description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x5174;&amp;#x8DA3;&amp;#x6240;&amp;#x81F4;&amp;#x7FFB;&amp;#x8BD1;&amp;#x4E86;&amp;#x4E00;&amp;#x672C;&amp;#x82F1;&amp;#x6587;&amp;#x7684;SVG&amp;#x6559;&amp;#x7A0B;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C06;&amp;#x5176;&amp;#x6258;&amp;#x7BA1;&amp;#x5728;GitHub&amp;#xFF0C">
+<meta name="description" content="&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;
+
+&amp;#x6BCF;&amp;#x6B21;&amp;#x60F3;&amp;#x8981;windows&amp;#x548C;linux&amp;#x4E92;&amp;#x4F20;&amp;#x6587;&amp;#x4EF6;&amp;#x65F6;&amp;#xFF0C;&amp;#x90FD;&amp;#x5F97;&amp;#x53BB;&amp;#x641C;&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitBook平台发布教程">
-<meta property="og:url" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/index.html">
+<meta property="og:title" content="CentOS ftp服务搭建">
+<meta property="og:url" content="http://brucewar.me/2017/05/04/CentOS-ftp服务搭建/index.html">
 <meta property="og:site_name" content="brucewar">
-<meta property="og:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x5174;&amp;#x8DA3;&amp;#x6240;&amp;#x81F4;&amp;#x7FFB;&amp;#x8BD1;&amp;#x4E86;&amp;#x4E00;&amp;#x672C;&amp;#x82F1;&amp;#x6587;&amp;#x7684;SVG&amp;#x6559;&amp;#x7A0B;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C06;&amp;#x5176;&amp;#x6258;&amp;#x7BA1;&amp;#x5728;GitHub&amp;#xFF0C">
-<meta property="og:image" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/gitbook2github.jpg">
-<meta property="og:image" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/webhook_url.jpg">
-<meta property="og:image" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/webhook_add.jpg">
-<meta property="og:image" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/custom_domain.jpg">
-<meta property="og:updated_time" content="2016-12-06T02:06:40.860Z">
+<meta property="og:description" content="&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;
+
+&amp;#x6BCF;&amp;#x6B21;&amp;#x60F3;&amp;#x8981;windows&amp;#x548C;linux&amp;#x4E92;&amp;#x4F20;&amp;#x6587;&amp;#x4EF6;&amp;#x65F6;&amp;#xFF0C;&amp;#x90FD;&amp;#x5F97;&amp;#x53BB;&amp;#x641C;&amp;">
+<meta property="og:updated_time" content="2017-05-04T03:49:39.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitBook平台发布教程">
-<meta name="twitter:description" content="&amp;#x6700;&amp;#x8FD1;&amp;#x5174;&amp;#x8DA3;&amp;#x6240;&amp;#x81F4;&amp;#x7FFB;&amp;#x8BD1;&amp;#x4E86;&amp;#x4E00;&amp;#x672C;&amp;#x82F1;&amp;#x6587;&amp;#x7684;SVG&amp;#x6559;&amp;#x7A0B;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C06;&amp;#x5176;&amp;#x6258;&amp;#x7BA1;&amp;#x5728;GitHub&amp;#xFF0C">
-<meta name="twitter:image" content="http://brucewar.me/2016/12/05/GitBook平台发布教程/gitbook2github.jpg">
+<meta name="twitter:title" content="CentOS ftp服务搭建">
+<meta name="twitter:description" content="&amp;#x597D;&amp;#x8BB0;&amp;#x6027;&amp;#x4E0D;&amp;#x5982;&amp;#x70C2;&amp;#x7B14;&amp;#x5934;
+
+&amp;#x6BCF;&amp;#x6B21;&amp;#x60F3;&amp;#x8981;windows&amp;#x548C;linux&amp;#x4E92;&amp;#x4F20;&amp;#x6587;&amp;#x4EF6;&amp;#x65F6;&amp;#xFF0C;&amp;#x90FD;&amp;#x5F97;&amp;#x53BB;&amp;#x641C;&amp;">
 
 
 
@@ -126,7 +127,7 @@
   };
 </script>
 
-  <title> GitBook平台发布教程 | brucewar </title>
+  <title> CentOS ftp服务搭建 | brucewar </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -319,7 +320,7 @@
             
             
               
-                GitBook平台发布教程
+                CentOS ftp服务搭建
               
             
           </h1>
@@ -331,8 +332,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-12-05T17:11:25+08:00" content="2016-12-05">
-              2016-12-05
+            <time itemprop="dateCreated" datetime="2017-05-04T11:33:03+08:00" content="2017-05-04">
+              2017-05-04
             </time>
           </span>
 
@@ -345,8 +346,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/GitBook/" itemprop="url" rel="index">
-                    <span itemprop="name">GitBook</span>
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
                   </a>
                 </span>
 
@@ -361,8 +362,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/12/05/GitBook平台发布教程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/12/05/GitBook平台发布教程/" itemprop="commentsCount"></span>
+                <a href="/2017/05/04/CentOS-ftp服务搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/05/04/CentOS-ftp服务搭建/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -372,7 +373,7 @@
 
           
           
-             <span id="/2016/12/05/GitBook平台发布教程/" class="leancloud_visitors" data-flag-title="GitBook平台发布教程">
+             <span id="/2017/05/04/CentOS-ftp服务搭建/" class="leancloud_visitors" data-flag-title="CentOS ftp服务搭建">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,55 +395,50 @@
       
 
       
-        <p>&#x6700;&#x8FD1;&#x5174;&#x8DA3;&#x6240;&#x81F4;&#x7FFB;&#x8BD1;&#x4E86;&#x4E00;&#x672C;&#x82F1;&#x6587;&#x7684;SVG&#x6559;&#x7A0B;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x6258;&#x7BA1;&#x5728;<strong>GitHub</strong>&#xFF0C;&#x90E8;&#x7F72;&#x4E8E;<strong>GitBook</strong>&#x3002;&#x4E3A;&#x4E86;&#x7ED9;&#x5927;&#x5BB6;&#x6700;&#x76F4;&#x89C2;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x732E;&#x4E0A;&#x6559;&#x7A0B;&#x90E8;&#x7F72;&#x5730;&#x5740;&#xFF1A;<a href="https://svg.brucewar.me" target="_blank" rel="external">https://svg.brucewar.me</a>&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x7FFB;&#x8BD1;&#x82F1;&#x6587;&#x6587;&#x6863;&#xFF0C;&#x4E5F;&#x662F;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;GitBook&#x90E8;&#x7F72;&#x7535;&#x5B50;&#x4E66;&#x3002;&#x6559;&#x7A0B;&#x867D;&#x7136;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x6D89;&#x53CA;&#x4E86;SVG&#x7684;&#x6240;&#x6709;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</p>
-<blockquote>
-<p>&#x5582;&#x5582;&#x5582;&#xFF0C;&#x8DD1;&#x9898;&#x4E86;&#x554A;&#xFF01;</p>
+        <blockquote>
+<p>&#x597D;&#x8BB0;&#x6027;&#x4E0D;&#x5982;&#x70C2;&#x7B14;&#x5934;</p>
 </blockquote>
-<p>&#x56DE;&#x5230;&#x6B63;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x90E8;&#x7F72;&#x7535;&#x5B50;&#x4E66;&#x6D89;&#x53CA;&#x7684;&#x5DE5;&#x5177;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#xFF0C;&#x6211;&#x5C06;&#x6309;&#x4EE5;&#x4E0B;&#x6D41;&#x7A0B;&#x6765;&#x5404;&#x4E2A;&#x51FB;&#x7834;&#xFF1A;</p>
-<ul>
-<li>&#x672C;&#x5730;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66;</li>
-<li>&#x6258;&#x7BA1;GitHub</li>
-<li>&#x53D1;&#x5E03;&#x5230;GitBook</li>
-<li>&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;</li>
-</ul>
-<h2 id="&#x672C;&#x5730;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66;"><a href="#&#x672C;&#x5730;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66;" class="headerlink" title="&#x672C;&#x5730;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66;"></a>&#x672C;&#x5730;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66;</h2><p>GitBook&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF08;gitbook&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;git&#x548C;markdown&#x5236;&#x4F5C;&#x672C;&#x5730;&#x7535;&#x5B50;&#x4E66;&#x5E76;&#x652F;&#x6301;&#x9884;&#x89C8;&#x7B49;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5B89;&#x88C5;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5B89;&#x88C5;<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Node.js</a>&#xFF0C;&#x5B98;&#x7F51;&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;&#x4E86;&#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;Node.js&#x7684;&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#x4E86;&#x3002;&#x7136;&#x540E;&#x4FBF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Node.js&#x63D0;&#x4F9B;&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;<code>npm</code>&#x5B89;&#x88C5;gitbook&#x4E86;&#x3002;</p>
-<h3 id="&#x5B89;&#x88C5;gitbook"><a href="#&#x5B89;&#x88C5;gitbook" class="headerlink" title="&#x5B89;&#x88C5;gitbook"></a>&#x5B89;&#x88C5;gitbook</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gitbook-cli -g</div></pre></td></tr></table></figure>
-<p>&#x7B49;&#x5F85;&#x7247;&#x523B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#xFF1A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">gitbook -V</div><div class="line"></div><div class="line"><span class="comment"># result:</span></div><div class="line"><span class="comment"># CLI version: 2.3.0</span></div><div class="line"><span class="comment"># GitBook version: 3.2.2</span></div><div class="line"></div><div class="line"><span class="comment"># &#x67E5;&#x770B;gitbook&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E9B;&#x547D;&#x4EE4;</span></div><div class="line">gitbook -h</div></pre></td></tr></table></figure>
-<h3 id="&#x521D;&#x59CB;&#x5316;&#x7535;&#x5B50;&#x4E66;"><a href="#&#x521D;&#x59CB;&#x5316;&#x7535;&#x5B50;&#x4E66;" class="headerlink" title="&#x521D;&#x59CB;&#x5316;&#x7535;&#x5B50;&#x4E66;"></a>&#x521D;&#x59CB;&#x5316;&#x7535;&#x5B50;&#x4E66;</h3><p>&#x9996;&#x5148;&#x4E3A;&#x7535;&#x5B50;&#x4E66;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x521D;&#x59CB;&#x5316;&#x7535;&#x5B50;&#x4E66;&#xFF1A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir ebook &amp;&amp; <span class="built_in">cd</span> ebook</div><div class="line">gitbook init</div></pre></td></tr></table></figure>
-<p>&#x6700;&#x7EC8;&#x4F1A;&#x5728;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x751F;&#x6210;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;<code>README.md</code>&#x548C;<code>SUMMARY.md</code>&#x3002;&#x524D;&#x8005;&#x4E3B;&#x8981;&#x662F;&#x5173;&#x4E8E;&#x4F60;&#x7684;&#x4E66;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x540E;&#x8005;&#x5305;&#x542B;&#x4E66;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x5373;&#x7AE0;&#x8282;&#x7ED3;&#x6784;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">* [&#x7B2C;&#x4E00;&#x7AE0;](chapter1.md)</div><div class="line">	* [&#x7B2C;&#x4E00;&#x8282;](chapter1_section1.md)</div><div class="line">	* [&#x7B2C;&#x4E8C;&#x8282;](chapter1_section2.md)</div><div class="line">* [&#x7B2C;&#x4E8C;&#x7AE0;](chapter2.md)</div></pre></td></tr></table></figure>
-<p>&#x4E0B;&#x9762;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;markdown&#x8BED;&#x6CD5;&#x7F16;&#x5199;&#x7535;&#x5B50;&#x4E66;&#x5566;&#xFF01;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x9884;&#x89C8;&#x7535;&#x5B50;&#x4E66;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#xFF1A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gitbook serve</div></pre></td></tr></table></figure>
-<p>&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x6709;&#x70B9;&#x6162;&#xFF0C;&#x5B83;&#x4F1A;&#x5B89;&#x88C5;gitbook&#x7684;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x5DE5;&#x5177;&#x3002;&#x7B49;&#x5F85;&#x4E00;&#x4F1A;&#x513F;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x63D0;&#x793A;&#xFF08;Serving book on <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>&#xFF09;&#xFF0C;&#x6253;&#x5F00;&#x94FE;&#x63A5;&#x4FBF;&#x53EF;&#x9884;&#x89C8;&#x4F60;&#x521B;&#x5EFA;&#x7684;&#x7535;&#x5B50;&#x4E66;&#x5566;&#xFF01;&#x8FD0;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#x4F1A;&#x5728;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x751F;&#x6210;&#x4E00;&#x4E2A;<code>_book</code>&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x662F;&#x751F;&#x6210;&#x7684;HTML&#x6587;&#x4EF6;&#x3002;</p>
-<h3 id="&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;"><a href="#&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;" class="headerlink" title="&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;"></a>&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;</h3><p>gitbook&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x7535;&#x5B50;&#x4E66;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<code>book.json</code>&#x6587;&#x4EF6;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x5982;&#x4E0B;&#xFF1A;</p>
-<ul>
-<li>title&#xFF1A;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x540D;&#x79F0;</li>
-<li>author&#xFF1A;&#x4F5C;&#x8005;</li>
-<li>description&#xFF1A;&#x672C;&#x4E66;&#x7684;&#x7B80;&#x5355;&#x63CF;&#x8FF0;</li>
-<li>language&#xFF1A;gitbook&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;</li>
-<li>links&#xFF1A;&#x5DE6;&#x4FA7;&#x5BFC;&#x822A;&#x680F;&#x6DFB;&#x52A0;&#x7684;&#x94FE;&#x63A5;</li>
-<li>styles&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x6837;&#x5F0F;</li>
-<li>plugins&#xFF1A;&#x914D;&#x7F6E;&#x4F7F;&#x7528;&#x7684;&#x63D2;&#x4EF6;</li>
-<li>pluginsConfig&#xFF1A;&#x5404;&#x4E2A;&#x63D2;&#x4EF6;&#x5BF9;&#x5E94;&#x7684;&#x914D;&#x7F6E;</li>
-<li>gitbook&#xFF1A;&#x6307;&#x5B9A;&#x4F7F;&#x7528;gitbook&#x7248;&#x672C;</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">	<span class="string">&quot;title&quot;</span>: <span class="string">&quot;SVG&#x6559;&#x7A0B;&#xFF08;&#x4E2D;&#x6587;&#x7FFB;&#x8BD1;&#x7248;&#xFF09;&quot;</span>,</div><div class="line">	<span class="string">&quot;author&quot;</span>: <span class="string">&quot;brucewar &lt;wjl891014@gmail.com&gt;&quot;</span>,</div><div class="line">	<span class="string">&quot;description&quot;</span>: <span class="string">&quot;SVG&#x6559;&#x7A0B;&#x4E2D;&#x6587;&#x7FFB;&#x8BD1;&#x7248;&#xFF0C;&#x4E5F;&#x662F;&#x672C;&#x4EBA;&#x7B2C;&#x4E00;&#x6B21;&#x7FFB;&#x8BD1;&#x82F1;&#x6587;&#x6559;&#x7A0B;&#x3002;&quot;</span>,</div><div class="line">	<span class="string">&quot;links&quot;</span>: {</div><div class="line">		<span class="string">&quot;sidebar&quot;</span>: {</div><div class="line">			<span class="string">&quot;&#x535A;&#x5BA2;&quot;</span>: <span class="string">&quot;http://brucewar.me&quot;</span>,</div><div class="line">			<span class="string">&quot;&#x6253;&#x8D4F;&quot;</span>: <span class="string">&quot;http://brucewar.me/donate/&quot;</span>,</div><div class="line">			<span class="string">&quot;View on GitHub&quot;</span>: <span class="string">&quot;https://github.com/brucewar/svg-tutorial&quot;</span></div><div class="line">		}</div><div class="line">	},</div><div class="line">	<span class="string">&quot;plugins&quot;</span>: [</div><div class="line">		<span class="string">&quot;duoshuo&quot;</span>,	<span class="comment">// &#x591A;&#x8BF4;&#x8BC4;&#x8BBA;</span></div><div class="line">		<span class="string">&quot;github&quot;</span>,	<span class="comment">// &#x5C55;&#x793A;github&#x56FE;&#x6807;</span></div><div class="line">		<span class="string">&quot;ga&quot;</span>,	<span class="comment">// google analytics</span></div><div class="line">		<span class="string">&quot;ba&quot;</span>	<span class="comment">// &#x767E;&#x5EA6;&#x7EDF;&#x8BA1;</span></div><div class="line">	],</div><div class="line">	<span class="string">&quot;pluginsConfig&quot;</span>: {</div><div class="line">		<span class="string">&quot;duoshuo&quot;</span>: {</div><div class="line">			<span class="string">&quot;short_name&quot;</span>: <span class="string">&quot;brucewar&quot;</span>,</div><div class="line">			<span class="string">&quot;theme&quot;</span>: <span class="string">&quot;default&quot;</span></div><div class="line">		},</div><div class="line">		<span class="string">&quot;github&quot;</span>: {</div><div class="line">			<span class="string">&quot;url&quot;</span>: <span class="string">&quot;https://github.com/brucewar&quot;</span></div><div class="line">		},</div><div class="line">		<span class="string">&quot;ga&quot;</span>: {</div><div class="line">			<span class="string">&quot;token&quot;</span>: <span class="string">&quot;UA-87259783-2&quot;</span></div><div class="line">		},</div><div class="line">		<span class="string">&quot;ba&quot;</span>: {</div><div class="line">			<span class="string">&quot;token&quot;</span>: <span class="string">&quot;80f89a3fe34a9f8e22c53f85908e2d6&quot;</span></div><div class="line">		}</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure>
-<p>&#x4E0A;&#x9762;&#x662F;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x5728;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#x6DFB;&#x52A0;&#x4E86;&#x63D2;&#x4EF6;&#xFF0C;&#x6267;&#x884C;<code>gitbook serve</code>&#x524D;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;&#x3002;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gitbook install</div></pre></td></tr></table></figure>
-<p>gitbook&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x5E73;&#x53F0;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53BB;&#x641C;&#x7D22;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x5176;&#x8D21;&#x732E;&#x63D2;&#x4EF6;&#x3002;</p>
-<h2 id="&#x6258;&#x7BA1;GitHub"><a href="#&#x6258;&#x7BA1;GitHub" class="headerlink" title="&#x6258;&#x7BA1;GitHub"></a>&#x6258;&#x7BA1;GitHub</h2><p>&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;<a href="https://github.com" target="_blank" rel="external">GitHub</a>&#x8D26;&#x53F7;&#x3002;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x516C;&#x6709;&#x4ED3;&#x5E93;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x56DE;&#x5230;&#x7535;&#x5B50;&#x4E66;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;git&#x5DE5;&#x5177;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x3002;&#x5E76;&#x5C06;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x548C;&#x8FDC;&#x7A0B;GitHub&#x4ED3;&#x5E93;&#x5173;&#x8054;&#x3002;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add origin &#x4F60;&#x7684;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5730;&#x5740;&#xFF08;&#x6BD4;&#x5982;https://github.com/brucewar/svg-tutorial&#xFF09;</div><div class="line"></div><div class="line">// &#x63D0;&#x4EA4;&#x7535;&#x5B50;&#x4E66;</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">&quot;publish&quot;</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure>
-<h2 id="&#x53D1;&#x5E03;&#x5230;GitBook"><a href="#&#x53D1;&#x5E03;&#x5230;GitBook" class="headerlink" title="&#x53D1;&#x5E03;&#x5230;GitBook"></a>&#x53D1;&#x5E03;&#x5230;GitBook</h2><p>&#x5982;&#x679C;&#x6CA1;&#x6709;<a href="https://www.gitbook.com" target="_blank" rel="external">GitBook</a>&#x8D26;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x3002;&#x7136;&#x540E;&#x5728;&#x65B0;&#x5EFA;&#x4E00;&#x672C;book&#x3002;&#x7136;&#x540E;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5C06;GitBook&#x548C;GitHub&#x8FDB;&#x884C;&#x5173;&#x8054;&#x3002;</p>
-<p><img src="/2016/12/05/GitBook&#x5E73;&#x53F0;&#x53D1;&#x5E03;&#x6559;&#x7A0B;/gitbook2github.jpg" alt="GitBook&#x5173;&#x8054;GitHub&#x6B65;&#x9AA4;"></p>
-<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x8FD8;&#x4E0D;&#x591F;&#xFF0C;&#x56E0;&#x4E3A;GitBook&#x4E0D;&#x77E5;&#x9053;&#x4F55;&#x65F6;&#x6784;&#x5EFA;&#x4F60;&#x7684;&#x7535;&#x5B50;&#x4E66;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x7528;&#x5230;GitHub&#x7684;<em>webhook</em>&#x529F;&#x80FD;&#x3002;&#x901A;&#x4FD7;&#x70B9;&#x8BB2;&#xFF0C;&#x5C31;&#x662F;&#x5728;GitHub&#x63D0;&#x4EA4;&#x7535;&#x5B50;&#x4E66;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x8BA9;GitHub&#x544A;&#x8BC9;GitBook&#xFF0C;&#x6709;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x4F60;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x4E0B;&#x3002;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>&#x5173;&#x8054;&#x5B8C;GitHub&#x4ED3;&#x5E93;&#x540E;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x754C;&#x9762;&#xFF0C;&#x590D;&#x5236;webhook url&#xFF1A;</p>
-<p><img src="/2016/12/05/GitBook&#x5E73;&#x53F0;&#x53D1;&#x5E03;&#x6559;&#x7A0B;/webhook_url.jpg" alt="&#x590D;&#x5236;Webhook URL"></p>
-<p>&#x6253;&#x5F00;GitHub&#x4ED3;&#x5E93;&#x7684;&#x8BBE;&#x7F6E;&#x9875;&#x9762;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;webhook&#xFF1A;</p>
-<p><img src="/2016/12/05/GitBook&#x5E73;&#x53F0;&#x53D1;&#x5E03;&#x6559;&#x7A0B;/webhook_add.jpg" alt="&#x5728;GitHub&#x6DFB;&#x52A0;webhook"></p>
-<h2 id="&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;"><a href="#&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;" class="headerlink" title="&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;"></a>&#x7ED1;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;</h2><p>&#x6B64;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;GitBook&#x63D0;&#x4F9B;&#x7684;&#x57DF;&#x540D;&#x8BBF;&#x95EE;&#x4F60;&#x521A;&#x624D;&#x521B;&#x5EFA;&#x7684;&#x7535;&#x5B50;&#x4E66;&#x5566;&#xFF01;&#x4E00;&#x822C;&#x57DF;&#x540D;&#x683C;&#x5F0F;&#x662F;<a href="http://{author}.gitbooks.io/{book}/content&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x57DF;&#x540D;&#xFF08;&#x9996;&#x5148;&#x4F60;&#x5F97;&#x4E70;&#x4E2A;&#x57DF;&#x540D;&#xFF09;&#x3002;" target="_blank" rel="external">http://{author}.gitbooks.io/{book}/content&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x57DF;&#x540D;&#xFF08;&#x9996;&#x5148;&#x4F60;&#x5F97;&#x4E70;&#x4E2A;&#x57DF;&#x540D;&#xFF09;&#x3002;</a></p>
-<p><img src="/2016/12/05/GitBook&#x5E73;&#x53F0;&#x53D1;&#x5E03;&#x6559;&#x7A0B;/custom_domain.jpg" alt="&#x7ED1;&#x5B9A;&#x57DF;&#x540D;"></p>
+<p>&#x6BCF;&#x6B21;&#x60F3;&#x8981;windows&#x548C;linux&#x4E92;&#x4F20;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x90FD;&#x5F97;&#x53BB;&#x641C;&#x7D22;<em>&#x201C;Linux ftp&#x670D;&#x52A1;&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x201D;</em>&#xFF0C;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#x592A;&#x591A;&#xFF0C;&#x8FD8;&#x662F;&#x628A;&#x5B83;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x5427;&#xFF01;&#xFF01;&#xFF01;</p>
+<ol>
+<li><p>&#x5B89;&#x88C5;vsftpd ftp</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install ftp vsftpd</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5907;&#x4EFD;vsftpd&#x539F;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /etc/vsftpd/</div><div class="line">cp vsftpd.conf vsftpd.conf.origin</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x5BC6;&#x7801;&#x660E;&#x6587;&#x6587;&#x4EF6;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vim /etc/vsftpd/vftpuser.txt</div><div class="line"><span class="comment"># brucewar</span></div><div class="line"><span class="comment"># password</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x6839;&#x636E;&#x660E;&#x6587;&#x521B;&#x5EFA;&#x5BC6;&#x7801;DB&#x6587;&#x4EF6;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">db_load -T -t <span class="built_in">hash</span> <span class="_">-f</span> /etc/vsftpd/vftpuser.txt /etc/vsftpd/vftpuser.db</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x67E5;&#x770B;&#x5BC6;&#x7801;&#x6570;&#x636E;&#x6587;&#x4EF6;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">file /etc/vsftpd/vftpuser.db</div><div class="line"><span class="comment"># /etc/vsftpd/vftpuser.db: Berkeley DB(Hash,version9,native byte-order)</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x521B;&#x5EFA;vftpd&#x7684;guest&#x8D26;&#x6237;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">useradd <span class="_">-d</span> /ftp/private <span class="_">-s</span> /sbin/nologin vftpuser</div></pre></td></tr></table></figure>
+<p><strong>Note</strong>&#xFF1A;&#x8FD9;&#x4E00;&#x6B65;&#x53EF;&#x80FD;&#x4F1A;&#x521B;&#x5EFA;<em>/ftp/private</em>&#x5931;&#x8D25;&#xFF0C;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x7684;&#x6743;&#x9650;&#x8D4B;&#x4E88;vftpuser</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir -p /ftp/private</div><div class="line">chown -R vftpuser.vftpuser /ftp</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x6253;&#x5F00;<em>/etc/pam.d/vsftpd</em>, &#x5C06;<code>auth</code>&#x53CA;<code>account</code>&#x7684;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x884C;&#x90FD;&#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">auth required pam_userdb.so db=/etc/vsftpd/vftpuser</div><div class="line">account required pam_userdb.so db=/etc/vsftpd/vftpuser</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x6253;&#x5F00;<em>/etc/vsftpd/vsftpd.conf</em>&#xFF0C;&#x5C06;<code>anonymous_enable=YES</code>&#x6539;&#x4E3A;<code>anonymous_enable=NO</code>&#xFF0C;&#x5728;&#x6700;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">virtual_use_local_privs=YES</div><div class="line">guest_enable=YES</div><div class="line">guest_username=vftpuser</div><div class="line">chroot_local_user=YES</div><div class="line">allow_writeable_chroot=YES</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x8BBE;&#x7F6E;vsftpd&#x5F00;&#x673A;&#x542F;&#x52A8;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl <span class="built_in">enable</span> vsftpd</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x91CD;&#x542F;vsftpd&#x670D;&#x52A1;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl restart vsftpd</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x548C;SELinux</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">firewall-cmd --permanent --zone=public --add-service=ftp</div><div class="line">firewall-cmd --reload</div><div class="line"></div><div class="line">getsebool <span class="_">-a</span> | grep ftp</div><div class="line">setsebool -P ftpd_full_access on</div></pre></td></tr></table></figure>
+</li>
+<li><p>&#x67E5;&#x770B;vsftpd&#x670D;&#x52A1;&#x72B6;&#x6001;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl status vsftpd</div></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
@@ -480,11 +476,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/gitbook/" rel="tag">#gitbook</a>
+            <a href="/tags/Linux/" rel="tag">#Linux</a>
           
-            <a href="/tags/电子书/" rel="tag">#电子书</a>
+            <a href="/tags/CentOS/" rel="tag">#CentOS</a>
           
-            <a href="/tags/教程/" rel="tag">#教程</a>
+            <a href="/tags/ftp/" rel="tag">#ftp</a>
           
         </div>
       
@@ -493,17 +489,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/29/跑步带给了我什么/" rel="next" title="跑步带给了我什么">
-                <i class="fa fa-chevron-left"></i> 跑步带给了我什么
+              <a href="/2017/03/30/细胞卫士/" rel="next" title="细胞卫士">
+                <i class="fa fa-chevron-left"></i> 细胞卫士
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/20/npm3-0新的依赖解决方案/" rel="prev" title="npm3.0新的依赖解决方案">
-                npm3.0新的依赖解决方案 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -748,7 +740,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地生成电子书"><span class="nav-number">1.</span> <span class="nav-text">本地生成电子书</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装gitbook"><span class="nav-number">1.1.</span> <span class="nav-text">安装gitbook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化电子书"><span class="nav-number">1.2.</span> <span class="nav-text">初始化电子书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级配置"><span class="nav-number">1.3.</span> <span class="nav-text">高级配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#托管GitHub"><span class="nav-number">2.</span> <span class="nav-text">托管GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布到GitBook"><span class="nav-number">3.</span> <span class="nav-text">发布到GitBook</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定自定义域名"><span class="nav-number">4.</span> <span class="nav-text">绑定自定义域名</span></a></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
         </section>
@@ -884,9 +876,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'brucewar';
-      var disqus_identifier = '2016/12/05/GitBook平台发布教程/';
-      var disqus_title = 'GitBook平台发布教程';
-      var disqus_url = 'http://brucewar.me/2016/12/05/GitBook平台发布教程/';
+      var disqus_identifier = '2017/05/04/CentOS-ftp服务搭建/';
+      var disqus_title = 'CentOS ftp服务搭建';
+      var disqus_url = 'http://brucewar.me/2017/05/04/CentOS-ftp服务搭建/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
