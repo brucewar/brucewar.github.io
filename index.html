@@ -316,6 +316,142 @@
             
               
                 
+                <a class="post-title-link" href="/2017/05/06/Node-js-aes-128-cbc加密和解密/" itemprop="url">
+                  Node.js aes-128-cbc加密和解密
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-05-06T11:31:52+08:00" content="2017-05-06">
+              2017-05-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Node-js/" itemprop="url" rel="index">
+                    <span itemprop="name">Node.js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/06/Node-js-aes-128-cbc加密和解密/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/05/06/Node-js-aes-128-cbc加密和解密/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/05/06/Node-js-aes-128-cbc加密和解密/" class="leancloud_visitors" data-flag-title="Node.js aes-128-cbc加密和解密">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Java&#x7A0B;&#x5E8F;&#x4E2D;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;AES&#x52A0;&#x5BC6;&#x6A21;&#x5F0F;&#x662F;AES/CBC/PKCS5Padding&#xFF0C;&#x5728;Node.js&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x662F;aes-128-cbc&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;
+&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5F15;&#x5165;Node.js&#x7684;crypto&#x6A21;&#x5757;&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x8BF7;&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x3002;
+12345678910111213141516171819202122232425262728293031323334353637383940&apos;use strict&apos;;const crypto = require(&apos;crypto&apos;);const ALG_STRING = &apos;aes-128-cbc&apos;,  KEY = &apos;wjl891014#gmail.com&apos;,  IV = [ 0xcb, 0x53, 0x03, 0x0f, 0xe0, 0x79, 0x9d, 0xdc, 0x80, 0xa9, 0x83, 0xf1, 0x03, 0xb6, 0x59, 0x83 ];const md5sum = str =&gt; {  return crypto.createHash(&apos;md5&apos;)    .update(str)    .digest()    .slice(0, 16);};const encrypt = str =&gt; {  const key = md5sum(KEY);  // key&#x548C;IV &#x5FC5;&#x987B;&#x662F;
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/05/06/Node-js-aes-128-cbc加密和解密/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/05/04/CentOS-ftp服务搭建/" itemprop="url">
                   CentOS ftp服务搭建
                 </a>
@@ -780,8 +916,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/nvm/" itemprop="url" rel="index">
-                    <span itemprop="name">nvm</span>
+                  <a href="/categories/Node-js/" itemprop="url" rel="index">
+                    <span itemprop="name">Node.js</span>
                   </a>
                 </span>
 
@@ -1060,8 +1196,8 @@ https://github.com/coreybutler/nvm-windows
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/npm/" itemprop="url" rel="index">
-                    <span itemprop="name">npm</span>
+                  <a href="/categories/Node-js/" itemprop="url" rel="index">
+                    <span itemprop="name">Node.js</span>
                   </a>
                 </span>
 
@@ -1555,143 +1691,6 @@ https://github.com/coreybutler/nvm-windows
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/25/D3.js-完整的柱状图/" itemprop="url">
-                  D3.js（完整的柱状图）
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-10-25T10:59:26+08:00" content="2016-10-25">
-              2016-10-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/D3-js/" itemprop="url" rel="index">
-                    <span itemprop="name">D3.js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/25/D3.js-完整的柱状图/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/25/D3.js-完整的柱状图/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/25/D3.js-完整的柱状图/" class="leancloud_visitors" data-flag-title="D3.js（完整的柱状图）">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          &#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x6700;&#x7EC8;&#x7684;&#x67F1;&#x72B6;&#x56FE;&#x6548;&#x679C;&#x5C55;&#x793A;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x67F1;&#x72B6;&#x56FE;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;&#x77E9;&#x5F62;&#x3001;&#x6587;&#x5B57;&#x3001;&#x5750;&#x6807;&#x8F74;&#x3002;
-
-&#x6DFB;&#x52A0;SVG&#x753B;&#x5E03;12345678910111213141516// &#x753B;&#x5E03;&#x5927;&#x5C0F;var width = 400,height = 400;// &#x753B;&#x5E03;&#x56DB;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x7559;&#x767D;var margin = {	top: 20,	right: 30,	bottom: 20,	left: 30};var chart = d3.select(&apos;.chart&apos;).attr(&apos;width&apos;, width).attr(&apos;height&apos;, height).append(&apos;g&apos;);
-&#x5B9A;&#x4E49;&#x6BD4;&#x4F8B;&#x5C3A;12345// define x,y point rulevar x = d3.scale.ordinal().rangeRoundBands([0, width - margin.left - margin.right]);var y = d3.scale.linear().rang
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/25/D3.js-完整的柱状图/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1737,7 +1736,7 @@ https://github.com/coreybutler/nvm-windows
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1745,7 +1744,7 @@ https://github.com/coreybutler/nvm-windows
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -1754,7 +1753,7 @@ https://github.com/coreybutler/nvm-windows
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
